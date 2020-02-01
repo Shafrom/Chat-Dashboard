@@ -6,3 +6,18 @@
 a {
   text-decoration: none;
 }
+.dashboard {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
+  display: flex;
+}
+.sidebar {
+  width: 290px;
+  height: 100%;
+  box-shadow: 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 14.0351px 0px 25px rgba(86, 128, 248, 0.03);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
