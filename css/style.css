@@ -39,3 +39,24 @@ a {
 .sidebar__middle {
   flex-grow: 1;
 }
+.sidebar__middle-menu {
+  padding-top: 75px;
+}
+.sidebar__middle-menu-item {
+  display: flex;
+  padding-bottom: 35px;
+  padding-left: 38px;
+  cursor: pointer;
+}
+.sidebar__middle-menu-icon {
+  height: 24px;
+  padding-right: 18px;
+}
+.sidebar__middle-menu-link {
+  font-family: TT Norms;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #707C97;
+}
