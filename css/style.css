@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ a {
   text-decoration: none;
 }
 .dashboard {
+  font-family: 'TT Norms';
   width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
@@ -20,4 +23,19 @@ a {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+}
+.sidebar__top-avatar {
+  width: 100%;
+  padding: 80px 80px 0px 80px;
+  margin-bottom: 10px;
+}
+.sidebar__top-avatar-name {
+  font-family: TT Norms;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #0D1C2E;
+}
+.sidebar__middle {
+  flex-grow: 1;
 }
