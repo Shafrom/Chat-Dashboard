@@ -119,12 +119,19 @@ a {
 .chatsList {
   width: 31.09375%;
   height: 100%;
-  padding: 10.9rem 6.4rem 0 5.9rem;
-  min-width: 420px;
+  padding: 3.5rem 4.5rem 0 4rem;
+  min-width: 75rem;
+  display: flex;
+  flex-direction: column;
+}
+.chatLists__content {
+  flex-grow: 1;
+  overflow-y: auto;
 }
 .chatsList__top {
   width: 100%;
-  margin-bottom: 5.2rem;
+  margin-bottom: 2rem;
+  flex-shrink: 0;
 }
 .chatsList__top-title {
   display: flex;
@@ -180,7 +187,7 @@ a {
 }
 .chatsList__top-search {
   position: relative;
-  width: 70%;
+  width: 76%;
   margin-right: 0.2rem;
 }
 .chatsList__top-search-pic {
@@ -224,11 +231,13 @@ a {
   background: #FFFFFF;
   border-radius: .6rem;
   border: none;
+  margin-bottom: 2rem;
 }
 .chatLists__items-top {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 1.7rem;
 }
 .chatLists__items-top-avatar {
   height: 6.4rem;
@@ -294,6 +303,10 @@ a {
     transform: translateY(-2px);
   }
 }
+.chatLists_recIcon {
+  width: 1.2rem;
+  margin-right: 1rem;
+}
 .chatLists__items-top-status {
   font-family: TT Norms;
   font-size: 1.6rem;
@@ -301,13 +314,72 @@ a {
   text-transform: lowercase;
   color: #707C97;
 }
-
-
-
-
-
-
-
+.chatLists__items-lastMessage {
+  display: flex;
+}
+.chatLists__items-lastMessage-text {
+  width: 90%;
+  margin-right: 1.5rem;
+  font-family: TT Norms;
+  font-size: 1.6rem;
+  color: #707C97;
+}
+.chatLists__items-lastMessage-count {
+  padding-top: 1.5rem;
+}
+.lastMessage-count {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: TT Norms;
+}
+.chatLists__items-lastMessage-voice {
+  display: flex;
+  font-family: TT Norms;
+  font-size: 1.6rem;
+  color: #707C97;
+  margin-bottom: 1.3rem;
+}
+.chatLists__items-lastMessage-include {
+  width: 90%;
+}
+.chatLists__items-lastMessage-mic {
+  margin-right: 1rem;
+}
+.chatLists__items-lastMessage-content {
+  display: flex;
+  justify-content: flex-start;
+}
+.chatLists__items-lastMessage-attach {
+  padding: 1.2rem 1.4rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: TT Norms;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+}
+.attach_files {
+  background: rgba(42, 139, 242, 0.25);
+  color: #2A8BF2;
+}
+.attach_photo {
+  background: rgba(255, 51, 102, 0.25);
+  color: #FF3366;
+}
+.chatLists_filesIcon {
+  margin-right: 1rem;
+}
+.chatLists_photoIcon {
+  margin-right: 1rem;
+}
 
 
 /**************************/
