@@ -384,10 +384,26 @@ a {
 .chatWindow {
   width: 100%;
   height: 100%;
-  padding: 3.5rem 4.5rem 0 4rem;
+  padding: 3.5rem 4.5rem 4rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+.chatWindow__wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+.chatWindow__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  right: 3rem;
+  z-index: -1;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 12px rgba(0,0,0,.6);
 }
 .chatWindow__header {
   width: 100%;
@@ -439,15 +455,17 @@ a {
 .chatWindow__content {
   flex-grow: 1;
   background: #FFFFFF;
+  overflow-y: auto;
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
 .chatWindow__message-content {
   display: flex;
   margin-bottom: 1.2rem;
-  margin-left: 6rem;
   margin-top: 3rem;
 }
 .withoutAvatar {
-  margin-left: 10rem;
+  margin-left: 4rem;
 }
 .chatWindow__message {
   max-width: 52rem;
@@ -504,7 +522,7 @@ a {
   margin-left: 24rem;
 }
 .chatWindow__time.user_message {
-  margin-left: 67rem;
+  margin-left: 63rem;
 }
 .message-attach-file {
   font-family: TT Norms;
@@ -526,6 +544,53 @@ a {
   font-family: TT Norms;
   font-size: 1.6rem;
   color: #707C97;
+}
+.chatWindow__inputBar {
+  width: 100%;
+  background: #fff;
+  padding: 0 6rem;
+}
+.chatWindow__inputBar-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgba(112, 124, 151, 0.15);
+}
+.chatWindow__inputBar-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.chatWindow__inputBar-input {
+  flex-grow: 1;
+  height: 9rem;
+  resize: none;
+  border: none;
+  padding: 1rem 2rem;
+  outline: none;
+  font-family: TT Norms;
+  font-size: 2rem;
+  color: #707C97;
+}
+.chatWindow__inputBar-button {
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(325.78deg, #2A8BF2 14.76%, #7CB8F7 87.3%);
+  box-shadow: 4px 6px 10px rgba(42, 139, 242, 0.15), 2px 2px 25px rgba(42, 139, 242, 0.05), 4px 4px 25px rgba(42, 139, 242, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatWindow__inputBar-input::placeholder {
+  font-family: TT Norms;
+  font-size: 2rem;
+  color: rgba(112, 124, 151, 0.5);
+}
+.chatWindow__inputBar-buttomIcon {
+  transform: translate(-1px, 1px)
 }
 
 
